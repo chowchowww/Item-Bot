@@ -78,7 +78,9 @@ async function addNew(e, message) {
 	});
 
 	item.save()
-		.then(doc => console.log(doc))
-		.then(e.market_value > 10000 ? message.channel.send('```diff\n' + '- Name: ' + e.name + ' | Price: ' + e.market_value + '\n```') : 			message.channel.send(' Name: ' + e.name + ' | Price: ' + e.market_value))
+		.then(doc => {
+			console.log(doc);
+			doc[0].market_value > 10000 ? message.channel.send('```diff\n' + '- Name: ' + doc[0].name + ' | Price: ' + doc[0].market_value + '\n```') : message.channel.send(' Name: ' + doc[0].name + ' | Price: ' + doc[0].market_value);
+		})
 		.catch(err => console.error(err));
 }
