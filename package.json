@@ -1,0 +1,11 @@
+{
+  "name": "Item-Bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Chow <chaulea@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^12.2.0",
+    "node-fetch": "^2.6.0"
+  }
+}
