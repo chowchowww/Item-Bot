@@ -11,6 +11,6 @@
     "discord.js": "^12.2.0",
     "eslint": "^7.5.0",
     "mongoose": "^5.9.25",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.1"
   }
 }
